@@ -44,11 +44,11 @@ If an item does not have a title, take the first X characters from the descripti
 
 Here's how this app deals with three test feeds. 
 
-1. <a href="http://scripting.com/code/testing/itemviewer/?url=https%3A%2F%2Frss.nytimes.com%2Fservices%2Fxml%2Frss%2Fnyt%2FWorld.xml#">NYT feed</a>. It's an easy case because the NYT feeds are uniform. 
+<a href="http://scripting.com/code/titleless/?url=https%3A%2F%2Frss.nytimes.com%2Fservices%2Fxml%2Frss%2Fnyt%2FWorld.xml#">1. NYT feed</a>. It's an easy case because the NYT feeds are uniform. 
 
-2. <a href="http://scripting.com/code/testing/itemviewer/?url=http%3A%2F%2Fscripting.com%2Frss.xml">Scripting News feed</a> contains both titled and title-less posts.
+<a href="http://scripting.com/code/titleless/?url=http%3A%2F%2Fscripting.com%2Frss.xml">2. Scripting News feed</a> contains both titled and title-less posts.
 
-3. <a href="http://scripting.com/code/testing/itemviewer/?url=https%3A%2F%2Fmastodon.social%2F%40davew.rss">My Mastodon feed</a>, where all items are title-less. 
+<a href="http://scripting.com/code/titleless/?url=https%3A%2F%2Fmastodon.social%2F%40davew.rss">3. My Mastodon feed</a>, where all items are title-less. 
 
 ### Testing and development
 
