@@ -28,7 +28,7 @@ This is a writer's medium, not a programmer's.
 
 ### Your software is probably wrong
 
-I want to give you code to crib to make your software handle titleless items well. 
+I am giving you <a href="https://github.com/scripting/titlelessFeedsHowto/blob/main/code.js">code to crib</a> to make your software handle titleless items well. 
 
 In all likelihood your software does not do that currently. That's okay -- we can easily fix this.
 
