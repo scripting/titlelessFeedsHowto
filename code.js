@@ -1,11 +1,12 @@
+const myVersion = "0.4.0", myProductName = "titlelessFeedsHowto"; 
+
 var defaultFeedUrl = "http://scripting.com/rss.xml";
 
 var config = {
-	flDisplayBodytext: true,
 	maxTitleTextLength: 120,
 	maxBodyTextLength: 240,
-	maxItemTextLength: 50,
-	maxItemsInList: 25
+	maxItemsInList: 25,
+	flDisplayBodytext: true
 	};
 
 function getUrlParam (name) { 

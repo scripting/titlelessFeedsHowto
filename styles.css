@@ -4,14 +4,14 @@ body {
 	background-color: white;
 	}
 .divPageBody {
-	width: 800px;
+	width: 60%;
 	margin-top: 30px;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 400px;
 	}
 .divItemViewer  {
-	width: 800px;
+	width: 100%;
 	}
 .divFeedTitle {
 	font-size: 26px;
@@ -23,7 +23,6 @@ body {
 	margin-left: 0;
 	}
 .divItemViewer li {
-	width: 800px;
 	overflow: hidden;
 	list-style-type: none;
 	padding-top: 3px;
@@ -50,10 +49,10 @@ body {
 	margin-bottom: 30px;
 	}
 .divUrlInput input {
+	width: 50%;
 	margin-top: 11px;
 	margin-right: 5px;
 	height: 32px;
-	width: 600px;
 	}
 .divUrlInput .btnGo {
 	height: 32px;
