@@ -4,7 +4,7 @@ A simple feed item viewer that works with titled or titleless items.
 
 ### Screen shot
 
-<img src="http://scripting.com/images/2022/12/10/titleLessExample.png" style="border: 1px dotted silver">
+I always like to see a <a href="http://scripting.com/images/2022/12/10/titleLessExample.png">screen shot</a> up front, and a <a href="http://scripting.com/code/titleless/?url=https%3A%2F%2Frss.nytimes.com%2Fservices%2Fxml%2Frss%2Fnyt%2FWorld.xml#">demo</a>. :smile:
 
 ### Feeds are for writers and readers
 
@@ -44,15 +44,15 @@ If an item does not have a title, take the first X characters from the descripti
 
 Here's how this app deals with three test feeds. 
 
-<a href="http://scripting.com/code/titleless/?url=https%3A%2F%2Frss.nytimes.com%2Fservices%2Fxml%2Frss%2Fnyt%2FWorld.xml#">1. NYT feed</a>. It's an easy case because the NYT feeds are uniform. 
+1. <a href="http://scripting.com/code/titleless/?url=https%3A%2F%2Frss.nytimes.com%2Fservices%2Fxml%2Frss%2Fnyt%2FWorld.xml#">NYT feed</a>. It's an easy case because the NYT feeds are uniform. 
 
-<a href="http://scripting.com/code/titleless/?url=http%3A%2F%2Fscripting.com%2Frss.xml">2. Scripting News feed</a> contains both titled and title-less posts.
+2. <a href="http://scripting.com/code/titleless/?url=http%3A%2F%2Fscripting.com%2Frss.xml">Scripting News feed</a> contains both titled and title-less posts.
 
-<a href="http://scripting.com/code/titleless/?url=https%3A%2F%2Fmastodon.social%2F%40davew.rss">3. My Mastodon feed</a>, where all items are title-less. 
+3. <a href="http://scripting.com/code/titleless/?url=https%3A%2F%2Fmastodon.social%2F%40davew.rss">My Mastodon feed</a>, where all items are title-less. 
 
 ### Testing and development
 
-You can test the method with any feed you like. Try entering different feed addresses in the app. If you spot a problem, share the URL of the feed as an issue in the repo here. 
+You can test the method with any feed you like. Try entering different feed addresses in the app. If you spot a problem, share the URL of the feed as an <a href="https://github.com/scripting/titlelessFeedsHowto/issues">issue</a> in the repo here. 
 
 You also have the source, and can come up with your own design and share it with us, and let's see, maybe this basic method can be improved on. 
 
