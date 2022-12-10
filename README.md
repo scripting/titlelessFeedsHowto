@@ -4,7 +4,7 @@ A simple feed item viewer that works with titled or titleless items.
 
 ### Screen shot
 
-<img src="http://scripting.com/images/2022/12/10/titleLessExample.png">
+<img src="http://scripting.com/images/2022/12/10/titleLessExample.png" style="border: 1px dotted silver">
 
 ### Feeds are for writers and readers
 
