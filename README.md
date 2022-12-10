@@ -24,9 +24,9 @@ It's up to the writer to decide if an item has a title.
 
 If it doesn't have a title, it would be incorrect for a feed reader to invent a title for the item. If the writer didn't put one there, you don't get to put one there for them. They made their intention clear. You must respect it. 
 
-This is a writer's medium, not the programmer's.
+This is a writer's medium, not a programmer's.
 
-### The software is wrong
+### Your software is probably wrong
 
 I want to give you code to crib to make your software handle titleless items well. 
 
@@ -39,6 +39,8 @@ Assume you have two slots you must fill in your software, for each item: <i>titl
 If an item has a title, display the title in the title slot, and the first N characters of the description element in the body slot. 
 
 If an item does not have a title, take the first X characters from the description, adjusted for whitespace (i.e. don't break where there isn't a word break), display that text in the title slot, and display the next N characters from the description in the body slot. 
+
+That's how the app in this repo works.
 
 ### Three examples
 
