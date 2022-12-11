@@ -4,6 +4,8 @@ Per jz's <a href="https://github.com/scripting/titlelessFeedsHowto/issues/1#issu
 
 Added a period at the end of an actual title. Looks much better to separate it from the excerpt text that follows. 
 
+We now display the version number in the upper right corner. 
+
 #### 12/9/22 by DW
 
 A simple feed item viewer that works with titled or titleless items. 
