@@ -10,6 +10,11 @@ body {
 	margin-right: auto;
 	margin-bottom: 400px;
 	}
+.divVersionNumber {
+	font-size: 12px;
+	float: right;
+	padding-top: 19px;
+	}
 .divItemViewer  {
 	width: 100%;
 	}

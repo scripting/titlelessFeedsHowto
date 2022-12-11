@@ -1,4 +1,4 @@
-const myVersion = "0.4.0", myProductName = "titlelessFeedsHowto"; 
+const myVersion = "0.4.1", myProductName = "titlelessFeedsHowto"; 
 
 var defaultFeedUrl = "http://scripting.com/rss.xml";
 
@@ -33,6 +33,16 @@ function firstCharsFrom (theString, ctCharsApprox) {
 			}
 		}
 	return (theString);
+	}
+function firstSentence (theString) { //12/11/22
+	for (var i = 0; i < theString.length - 1; i++) {
+		if (theString [i] == ".") {
+			if (isWhitespace (theString [i + 1])) {
+				return (stringMid (theString, 1, i + 1));
+				}
+			}
+		}
+	return ("");
 	}
 function httpRequest (url, timeout, headers, callback) {
 	timeout = (timeout === undefined) ? 30000 : timeout;
@@ -78,7 +88,6 @@ function readFeed (feedUrl, callback) {
 		});
 	}
 function viewFeedItems (feedUrl) {
-	const elipses = "...";
 	readFeed (feedUrl, function (err, theFeed) {
 		if (err) {
 			alertDialog (err.message);
@@ -93,12 +102,19 @@ function viewFeedItems (feedUrl) {
 					const viewedItem = $("<li></li>");
 					var titleText = "", bodyText = "";
 					if (feedItem.title !== undefined) {
-						titleText = stripMarkup (feedItem.title) + " ";
+						titleText = stripMarkup (feedItem.title) + ". ";
 						bodyText = stripMarkup (feedItem.description);
 						}
 					else {
 						let s = stripMarkup (feedItem.description);
-						titleText = firstCharsFrom (s, config.maxTitleTextLength);
+						
+						let firstSen = firstSentence (s); //12/11/22 by DW
+						if ((firstSen.length <= config.maxTitleTextLength) && (firstSen.length > 0)) {
+							titleText = firstSen;
+							}
+						else {
+							titleText = firstCharsFrom (s, config.maxTitleTextLength);
+							}
 						bodyText = stringDelete (s, 1, titleText.length);
 						
 						bodyText = maxStringLength (bodyText, config.maxBodyTextLength, true, true); //whole words, if truncated add elipses
@@ -137,6 +153,7 @@ function viewFeedItems (feedUrl) {
 
 function startup () {
 	console.log ("startup");
+	$(".divVersionNumber").text ("v" + myVersion);
 	var urlParam = getUrlParam ("url");
 	var feedUrl = (urlParam === undefined) ? defaultFeedUrl : urlParam;
 	$("#idFeedUrlInput").val (feedUrl);
