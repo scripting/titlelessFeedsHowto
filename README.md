@@ -52,6 +52,14 @@ Here's how this app deals with three test feeds.
 
 3. <a href="http://scripting.com/code/titleless/?url=https%3A%2F%2Fmastodon.social%2F%40davew.rss">My Mastodon feed</a>, where all items are title-less. 
 
+### Why these examples are better than current practice
+
+1. The reader is not confronted with differences between the two types of items. It's hard to imagine the reader caring if the item has a title or not.
+
+2. The only words you see are ones the writer wrote. 
+
+3. No text is repeated. 
+
 ### Testing and development
 
 You can test the method with any feed you like. Try entering different feed addresses in the app. If you spot a problem, share the URL of the feed as an <a href="https://github.com/scripting/titlelessFeedsHowto/issues">issue</a> in the repo here. 
