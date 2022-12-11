@@ -54,7 +54,7 @@ Here's how this app deals with three test feeds.
 
 ### Why these examples are better than current practice
 
-1. The reader is not confronted with differences between the two types of items. It's hard to imagine the reader caring if the item has a title or not.
+1. The reader is not confronted with differences between the two types of items. 
 
 2. The only words you see are ones the writer wrote. 
 
